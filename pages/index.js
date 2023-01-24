@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Navbar, Main, About, Skills, Projects } from "@/components";
+import { Navbar, Main, About, Skills, Projects, Contact } from "@/components";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 }
