@@ -9,7 +9,7 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <div className="w-full lg:h-screen ">
+    <div id="contact" className="w-full lg:h-screen ">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -91,10 +91,10 @@ function Contact() {
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
-                  <textArea
+                  <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
-                  ></textArea>
+                  ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
                   Send Message
