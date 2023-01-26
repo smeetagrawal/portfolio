@@ -95,13 +95,15 @@ function Navbar() {
         >
           <div>
             <div className="flex justify-between items-center w-full">
-              <Image
-                src={navLogo}
-                alt="user-name-logo"
-                width="87"
-                height="50"
-                className="h-[35px]"
-              />
+              <Link href="/">
+                <Image
+                  src={navLogo}
+                  alt="user-name-logo"
+                  width="87"
+                  height="50"
+                  className="h-[35px]"
+                />
+              </Link>
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleSideBar}
@@ -116,20 +118,20 @@ function Navbar() {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            <ul className="uppercase" onClick={handleSideBar}>
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
