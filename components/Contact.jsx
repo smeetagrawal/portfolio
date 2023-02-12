@@ -3,7 +3,7 @@ import contactImg from "public/assets/contact.jpg";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 
@@ -27,8 +27,8 @@ function Contact() {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name here</h2>
-                <p>Front-End Developer</p>
+                <h2 className="py-2">Smeet Agrawal</h2>
+                <p>JavaScript Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time position. Contact me
                   and let&apos;s talk.
@@ -37,18 +37,33 @@ function Contact() {
               <div>
                 <p className="pt-8 uppercase">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+                  <a
+                    className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+                    href="https://www.linkedin.com/in/smeet-agrawal-638040165"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaLinkedinIn />
-                  </div>
-                  <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+                  </a>
+                  <a
+                    className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+                    href="https://github.com/smeetagrawal"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaGithub />
-                  </div>
-                  <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+                  </a>
+                  <a
+                    className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+                    href="mailto:smeetagrawal.886@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiOutlineMail />
-                  </div>
-                  <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+                  </a>
+                  {/* <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
                     <BsFillPersonLinesFill />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
