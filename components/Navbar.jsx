@@ -38,7 +38,8 @@ function Navbar() {
       router.asPath === "/property" ||
       router.asPath === "/twitch" ||
       router.asPath === "/netflix" ||
-      router.asPath === "/crypto"
+      router.asPath === "/crypto" ||
+      router.asPath === "/busApp"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
