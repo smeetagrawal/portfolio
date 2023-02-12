@@ -27,6 +27,7 @@ function Main() {
             <a
               href="https://www.linkedin.com/in/smeet-agrawal-638040165"
               target="_blank"
+              rel="noreferrer"
               className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
             >
               <FaLinkedinIn />
@@ -35,6 +36,7 @@ function Main() {
               className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
               href="https://github.com/smeetagrawal"
               target="_blank"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
@@ -42,6 +44,7 @@ function Main() {
               className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
               href="mailto:smeetagrawal.886@gmail.com"
               target="_blank"
+              rel="noreferrer"
             >
               <AiOutlineMail />
             </a>
