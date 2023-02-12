@@ -16,7 +16,7 @@ function About() {
             I had completed my graduation in 2018 from Gandhinagar Institute Of
             Technology. After that I had started my journey as a Javscript
             Developer and worked on technologies like Angular.js, Angular 10,
-            React, React Native, Node.js, creating and integrating api's,
+            React, React Native, Node.js, creating and integrating api&apos;s,
             scraping data from website and storing that in database.
           </p>
           <p className="py-2 text-gray-600">
