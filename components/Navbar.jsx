@@ -60,7 +60,7 @@ function Navbar() {
     >
       {/* Header */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
+        {/* <Link href="/">
           <Image
             src={navLogo}
             alt="user-name-logo"
@@ -68,7 +68,7 @@ function Navbar() {
             height="50"
             className="h-[50px]"
           />
-        </Link>
+        </Link> */}
         <div>
           {/* list of sections visible only on desktop version */}
           <ul className="hidden md:flex" style={{ color: linkColor }}>
