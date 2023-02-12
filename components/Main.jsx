@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillFilePersonFill, BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillFilePersonFill, BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Main() {
@@ -14,28 +14,40 @@ function Main() {
           <h1 className="py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#5651e5]"> Smeet</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700">A JavaScript Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I&apos;m a front-end web developer specializing in building
-            exceptional digital experiences. Currently, I&apos;m focused on
-            building responsive front-end web application and also have an
-            experience in backend technology like node.js and have some
-            experience in CI/CD for automating task like deploying frontend
-            builds with AWS
+            I&apos;m a JavaScript developer having experience in building
+            websites. Currently, I&apos;m focused on building responsive
+            front-end web application and also have an experience in backend
+            technology like node.js and have some experience in CI/CD for
+            automating task like deploying frontend builds with AWS S3 and
+            CloudFront
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+            <a
+              href="https://www.linkedin.com/in/smeet-agrawal-638040165"
+              target="_blank"
+              className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+            >
               <FaLinkedinIn />
-            </div>
-            <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+            </a>
+            <a
+              className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+              href="https://github.com/smeetagrawal"
+              target="_blank"
+            >
               <FaGithub />
-            </div>
-            <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+            </a>
+            <a
+              className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300"
+              href="mailto:smeetagrawal.886@gmail.com"
+              target="_blank"
+            >
               <AiOutlineMail />
-            </div>
-            <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
+            </a>
+            {/* <div className="p-6 shadow-lg shadow-gray-400 rounded-full cursor-pointer hover:scale-110 ease-in duration-300">
               <BsFillPersonLinesFill />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
