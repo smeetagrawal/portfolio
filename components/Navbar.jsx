@@ -5,10 +5,14 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import navLogo from "../public/assets/navLogo.png";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [sidebar, setSideBar] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
 
   const handleSideBar = () => {
     setSideBar(!sidebar);
@@ -29,8 +33,25 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    if (
+      router.asPath === "/property" ||
+      router.asPath === "/twitch" ||
+      router.asPath === "/netflix" ||
+      router.asPath === "/crypto"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+    console.log("router", router);
+  }, [router]);
+
   return (
     <div
+      style={{ backgroundColor: navBg }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -50,7 +71,7 @@ function Navbar() {
         </Link>
         <div>
           {/* list of sections visible only on desktop version */}
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex" style={{ color: linkColor }}>
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
