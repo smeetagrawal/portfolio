@@ -1,5 +1,6 @@
 import React from "react";
 import propertyImg from "public/assets/projects/property.jpg";
+import busAppImg from "/public/assets/projects/bus_app_2.png";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
@@ -14,8 +15,8 @@ function BusApp() {
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
-          alt="property image"
-          src={propertyImg}
+          alt="BusApp"
+          src={busAppImg}
           fill
           style={{ objectFit: "cover" }}
         />
