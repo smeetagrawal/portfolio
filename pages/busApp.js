@@ -34,7 +34,8 @@ function BusApp() {
             like start and end point, add intermediate stations. Users can also
             add new cities by going into city management section if the cities
             are not available. There is an functionality where user can book the
-            ticket for the passengers, but this product is in development stage.
+            ticket for the passengers, Please make a note this product is in
+            development stage.
           </p>
           <button
             className="px-8 py-2 mt-4 mr-8"
