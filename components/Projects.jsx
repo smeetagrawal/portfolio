@@ -1,9 +1,10 @@
 import React from "react";
 import { ProjectItem } from ".";
-import propertyImg from "/public/assets/projects/property.jpg";
-import cryptoImg from "/public/assets/projects/crypto.jpg";
-import netflixImg from "/public/assets/projects/netflix.jpg";
-import twitchImg from "/public/assets/projects/twitch.jpg";
+// import propertyImg from "/public/assets/projects/property.jpg";
+// import cryptoImg from "/public/assets/projects/crypto.jpg";
+// import netflixImg from "/public/assets/projects/netflix.jpg";
+// import twitchImg from "/public/assets/projects/twitch.jpg";
+import busappImg from "/public/assets/projects/bus_app.jpg";
 
 function Projects() {
   return (
@@ -15,18 +16,18 @@ function Projects() {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
-            technology="ReactJs"
+            title="Bus App"
+            backgroundImg={busappImg}
+            projectUrl="/busApp"
+            technology="Angular-10"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="Crypto App"
             backgroundImg={cryptoImg}
             projectUrl="/crypto"
             technology="ReactJs"
-          />
-          <ProjectItem
+          /> */}
+          {/* <ProjectItem
             title="Netflix App"
             backgroundImg={netflixImg}
             projectUrl="/netflix"
@@ -37,7 +38,7 @@ function Projects() {
             backgroundImg={twitchImg}
             projectUrl="/twitch"
             technology="ReactJs"
-          />
+          /> */}
         </div>
       </div>
     </div>
