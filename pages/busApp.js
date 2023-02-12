@@ -1,6 +1,6 @@
 import React from "react";
 import propertyImg from "public/assets/projects/property.jpg";
-import busAppImg from "/public/assets/projects/bus_app_2.png";
+import busAppImg from "/public/assets/projects/bus_app.jpg";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
