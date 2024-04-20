@@ -5,6 +5,7 @@ import { ProjectItem } from ".";
 // import netflixImg from "/public/assets/projects/netflix.jpg";
 // import twitchImg from "/public/assets/projects/twitch.jpg";
 import busappImg from "/public/assets/projects/bus_app.jpg";
+import skulishImg from "/public/assets/projects/skulish/image1.png";
 
 function Projects() {
   return (
@@ -15,11 +16,17 @@ function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
+          {/* <ProjectItem
             title="Bus App"
             backgroundImg={busappImg}
             projectUrl="/busApp"
             technology="Angular-10"
+          /> */}
+          <ProjectItem
+            title="Skulish"
+            backgroundImg={skulishImg}
+            projectUrl="/skulishApp"
+            technology="React.js, Node.js, Tailwind, Vercel for deployment"
           />
           {/* <ProjectItem
             title="Crypto App"

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import navLogo from "../public/assets/navLogo.png";
+// import navLogo from "../public/assets/navLogo.png";
 import { useRouter } from "next/router";
 
 function Navbar() {
@@ -111,20 +111,21 @@ function Navbar() {
         <div
           className={
             sidebar
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 overflow-y-auto"
               : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex justify-between items-center w-full">
               <Link href="/">
-                <Image
+                {/* <Image
                   src={navLogo}
                   alt="user-name-logo"
                   width="87"
                   height="50"
                   className="h-[35px]"
-                />
+                /> */}
+                Smeet Agrawal
               </Link>
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
